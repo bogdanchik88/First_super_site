@@ -175,21 +175,6 @@ header{
 		gap:18px;
 		margin-bottom: 42px;
 	}
-	#more_2{
-		width:157px;
-		height:53px;
-		color:#fff;
-		text-decoration:none;
-		padding:13px 29px;
-		border-radius:28px;
-		border:2px solid #fff;
-		background: #161D2F;
-	}
-	#more_2:hover{
-		border:2px solid rgba(255, 255, 255, 0);
-		background: #3043A9;
-		transition:all 0.2s linear;		
-	}
 
 	.total-vid{
 		position:relative;
@@ -362,17 +347,20 @@ header{
 		.banner h1{
 			font-size:1.875em; font-weight:600; 
 			color:#161D2F; text-align:center;
-			margin-bottom: 10px;		
+			margin-bottom: 10px;	
+			margin-top:30px;	
 		}
 		.banner-pic{
 			max-width: 188px;
 			border-radius:8px;
 			margin-bottom:10px;
+
 			margin-left:81px; margin-right:81px;
 		}
 		.banner h2{
 			font-size:1.25em; font-weight:400; 
 			color:#222222; text-align:center;	
+			margin-bottom:10px;
 		}
 		.list{
 			display:flex;
@@ -384,6 +372,29 @@ header{
 			display:flex;
 			gap:11px;
 			align-items:center;
-		}
 
+		}
+		.text-bold{
+			font-size:2em; font-weight:600; 			
+			color:#161D2F;
+		}
+		.text-normal{
+			font-size:1.25em; font-weight:300; 			
+			color:#222222;			
+		}
+		#more_3{
+			width:161px;
+			height:57px;
+			color:#fff;
+			text-decoration:none;
+			padding:13px 20px;
+			border-radius:28px;
+			background: #3043A9;
+			margin:30px;
+		}
+		#more_3:hover{
+			background: #161D2F;
+			transition:all 0.2s linear;
+		}
+		
 
