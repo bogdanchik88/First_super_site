@@ -431,8 +431,9 @@ header{
 	#ban-3 .list{
 		margin-bottom:50px;
 	}
+
 .benefits{
-	margin-top:200px;
+	margin-top:100px;
 	display:flex; flex-direction:column;
 }
 	.benefits-head{
@@ -454,7 +455,10 @@ header{
 	}
 
 	.benefits-numbers{
-		display:flex;
-		justify-content:center;
-
+		display:flex; justify-content:center;
+		align-items: flex-start; gap:15px;
+		font-family: var(--font-family);
+		font-size:1em; min-height:100%;
+		color:#000; text-align: center;
+		text-decoration:none;
 	}
