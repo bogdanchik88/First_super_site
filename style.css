@@ -92,12 +92,13 @@ body{
 	transform: translate(-50%, -50%);
   }
 
-.container{
+
+
+.header-content{
 	display:flex;
 	justify-content:space-evenly;
 	align-items: center;
 }
-
 header{
     background:#161D2F; overflow:hidden;
 	
@@ -216,6 +217,8 @@ header{
 			transition:all 0.1s linear;
 		}
 
+
+
 .programs{
 	color: #000;
 	margin-top:92px;
@@ -236,6 +239,8 @@ header{
 		text-align:center;
 		margin-bottom:30px;
 	}
+
+
 
 .slider{
 	display:flex; justify-content:center; gap:30px;
@@ -286,6 +291,8 @@ header{
 			transition:all 0.1s linear;
 		}
 
+
+
 .preparation{
 	display:flex; justify-content:center; gap:60px;
 	margin-top:100px; margin-bottom:100px;
@@ -316,6 +323,8 @@ header{
 	.preparation-bold{
 		font-weight:500;
 	}
+
+
 
 .prising-bg{
 	position:relative;
@@ -361,6 +370,9 @@ header{
 		border-radius:35px;
 		box-shadow: 0 16px 35px 0 rgba(112, 144, 176, 0.2);
 		padding-bottom:45px;
+	}
+	.popular-pic{
+		position:absolute; right:0;
 	}
 	.banner h1{
 		font-size:1.875em; font-weight:600; 
@@ -420,6 +432,9 @@ header{
 	#ban-1 .list{
 		margin-bottom:124px;
 	}
+	#ban-2{
+		position:relative;
+	}
 	#ban-2 .list{
 		margin-bottom:87px;
 	}	
@@ -432,15 +447,17 @@ header{
 		margin-bottom:50px;
 	}
 
+
+
 .benefits{
 	margin-top:100px;
 	display:flex; flex-direction:column;
 }
 	.benefits-head{
+		margin-top:100px;
 		display:flex; justify-content: center; gap:10px;
 		align-items: flex-start;
 		font-family: var(--font-family);
-		font-size:1em; min-height:100%;
 		color:#000; text-align: center;
 		text-decoration:none;
 	}
@@ -456,9 +473,84 @@ header{
 
 	.benefits-numbers{
 		display:flex; justify-content:center;
-		align-items: flex-start; gap:15px;
+		gap:15px; align-items: center;
 		font-family: var(--font-family);
-		font-size:1em; min-height:100%;
 		color:#000; text-align: center;
 		text-decoration:none;
+		margin-bottom:50px;
+	}
+	.divider{
+		border: 1px solid #161d2f;
+		width: 96px; height: 0px;
+		transform: rotate(-90deg);
+		opacity: 0.4;
+
+	}
+	.number h1{
+		font-family: var(--second-family);		
+		font-size:3em; font-weight:800;
+	}
+	.number h2{
+		font-size:1.125em; font-weight:400;
+	}
+
+	.benefits-advantages{
+		display:flex; flex-direction:column;
+		justify-content: center; margin-bottom:100px;
+	}
+		.row{
+			display:flex; flex-direction:row;
+			justify-content: center; gap:30px;
+		}
+		.advantage{
+			display:flex; justify-content: center; gap:30px;
+			align-items: flex-start;
+			font-family: var(--font-family);
+			color:#000; text-align: left;
+			text-decoration:none;
+		}	
+		.advantage-text h1{
+			font-size:1.75em; font-weight:600;
+			text-transform: capitalize;
+			margin-bottom:5px;	color: #161d2f;	
+		}
+		.advantage-text h2{
+			font-size:1em; font-weight:300;
+			text-transform: capitalize;
+			margin-bottom:5px;	color: #222;	
+		}
+
+
+
+.member-form{
+		margin-top:100px;
+}
+	.member-bg{
+		position:relative;
+		display: flex; gap:152px;
+		align-items: center; justify-content: center;
+		align-items: flex-start;
+	}
+		.bg-blue-2{
+			height:406px;
+			width:77%;
+			background:#161D2F;
+			position:absolute;top:0px;
+			z-index:-2; border-radius:20px;
+		}
+	.member-pic{
+		margin-top:50px;
+	}
+	.member-entry{
+		display:flex; flex-direction:column;
+		margin-top:105px;
+		text-decoration:none;
+		font-family: var(--font-family);	
+		text-align: left;
+	}
+	.member-entry h1{
+		font-weight: 600;
+		font-size:2.5em;
+		text-transform: capitalize;
+		margin-bottom:30px;
 	}
