@@ -175,6 +175,22 @@ header{
 		gap:18px;
 		margin-bottom: 42px;
 	}
+    #more_2{
+		width:157px;
+		height:53px;
+		color:#fff;
+		text-decoration:none;
+		padding:13px 29px;
+		border-radius:28px;
+		border:2px solid rgba(255, 255, 255, 0);
+		background: #3043A9;
+    }
+	#more_2:hover{
+		background: #161D2F;
+		border-color: #fff;
+		color:#fff;
+		transition:all 0.2s linear;
+	}
 
 	.total-vid{
 		position:relative;
@@ -333,6 +349,7 @@ header{
 			display:flex; justify-content:center; gap:30px;
 			align-items: center;
 			gap:30px;
+			margin-bottom:100px;
 		}
 		.banner{
 			display:flex; flex-direction: column;
@@ -343,6 +360,7 @@ header{
 			background:#fff;
 			border-radius:35px;
 			box-shadow: 0 16px 35px 0 rgba(112, 144, 176, 0.2);
+			padding-bottom:45px;
 		}
 		.banner h1{
 			font-size:1.875em; font-weight:600; 
@@ -366,13 +384,16 @@ header{
 			display:flex;
 			flex-direction: column;
 			gap:11px;
-			margin-bottom:124px;
+
 		}
 		.prising-list{
 			display:flex;
 			gap:11px;
 			align-items:center;
-
+			
+		}
+		.text{
+			margin-bottom:44px;
 		}
 		.text-bold{
 			font-size:2em; font-weight:600; 			
@@ -390,11 +411,23 @@ header{
 			padding:13px 20px;
 			border-radius:28px;
 			background: #3043A9;
-			margin:30px;
 		}
 		#more_3:hover{
+			border-color: #161D2F;
 			background: #161D2F;
 			transition:all 0.2s linear;
 		}
+		#ban-1 .list{
+			margin-bottom:124px;
+		}
+		#ban-2 .list{
+			margin-bottom:87px;
+		}	
+		#ban-2 .popular{
+			display:flex;
 		
-
+			justify-content: space-evenly;
+		}	
+		#ban-3 .list{
+			margin-bottom:50px;
+		}
