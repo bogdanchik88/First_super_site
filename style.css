@@ -621,17 +621,30 @@ header{
 		display:flex; justify-content:center; gap:98px;
 		flex-direction: row; 
 	}
+	.footer-links{
+		display:flex; flex-direction:column;
+	}
 		.footer-text h1{
 			font-size: 1.125em; font-weight:500;
 			margin-bottom:20px; color: #161d2f;
 		}
-		.footer-text h2{
+		.h2{
 			font-size: 1em; font-weight:300;
+			text-decoration:none;
 			margin-bottom:10px;color: #222;
 		}
-		.footer-text h3{
+		.h3{
 			font-size: 1em; font-weight:300;
+			text-decoration:none; opacity:1;
 			margin-bottom:none;color: #222;
+		}
+		.h2:hover{
+			opacity:0.6;
+			transition:all 0.2s linear;
+		}
+		.h3:hover{
+			opacity:0.6;
+			transition:all 0.2s linear;
 		}
 	.footer-end{
 		font-family: var(--font-family);
