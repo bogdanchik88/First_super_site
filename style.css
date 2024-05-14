@@ -78,10 +78,12 @@ img{
 
 
 body{
+
     font-family: var(--font-family);
     font-size:1em; min-height:100%;
     color:#fff; text-align: left;
     text-decoration:none;
+	overflow-x:hidden;
 } 
 
 .centered {
@@ -101,7 +103,6 @@ body{
 }
 header{
     background:#161D2F; overflow:hidden;
-	
 }
     .center-block-main{
         margin:0 auto;
@@ -183,12 +184,12 @@ header{
 		text-decoration:none;
 		padding:13px 29px;
 		border-radius:28px;
-		border:2px solid rgba(255, 255, 255, 0);
-		background: #3043A9;
+		border:2PX solid #fff;
+		background: #161D2F;
     }
 	#more_2:hover{
-		background: #161D2F;
-		border-color: #fff;
+		background: #3043A9;
+		border:2px solid rgba(255, 255, 255, 0);
 		color:#fff;
 		transition:all 0.2s linear;
 	}
@@ -492,18 +493,20 @@ header{
 	}
 	.number h2{
 		font-size:1.125em; font-weight:400;
+		text-wrap:wrap;
 	}
 
 	.benefits-advantages{
-		display:flex; flex-direction:column;
-		justify-content: center; margin-bottom:100px;
+		display:flex; flex-direction:row; gap:30px;
+		justify-content:center; margin-bottom:70px;
 	}
 		.row{
-			display:flex; flex-direction:row;
-			justify-content: center; gap:30px;
+			display:flex; flex-direction:column;
+			justify-content:center;  gap:30px;
+			margin-bottom: 30px;
 		}
 		.advantage{
-			display:flex; justify-content: center; gap:30px;
+			display:flex;  gap:30px;
 			align-items: flex-start;
 			font-family: var(--font-family);
 			color:#000; text-align: left;
@@ -558,17 +561,19 @@ header{
 		display:flex; flex-direction: row; gap:30px;
 		align-items: center; justify-content:flex-start;
 	}
-	#more_4{
+	#more-4{
 		width:161px;
 		height:57px;
 		color:#fff;
 		text-decoration:none;
-		padding:15px 20px;
+		padding:16px 37px;
 		border-radius:28px;
 		background: #3043A9;
+		border:2px solid rgba(255,255,255,0);
 	}
-	#more_4:hover{
-		border-color: #161D2F;
+	#more-4:hover{
+
+		border-color: #fff;
 		background: #161D2F;
 		transition:all 0.2s linear;
 	}
@@ -576,7 +581,7 @@ header{
 		box-sizing:border-box;
 		color:#fff; font-size:1em;
 		background: #161D2F;
-		border:1px solid #fff;
+		border:2px solid #fff;
 		border-radius:34px;
 		padding-top:17px; padding-bottom:17px;
 		padding-left:24px; padding-right: 63px;
@@ -652,3 +657,7 @@ header{
 		font-weight: 400; font-size: 0.875em;
 		color: #222; margin-bottom:20px;
 	}
+
+@media screen and(max-width:390px){
+
+}
