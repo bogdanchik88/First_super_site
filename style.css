@@ -110,16 +110,13 @@ header{
     }
     .logo{
         margin-top:20px; margin-bottom:20px;
-
     }
     .menuhead{
-		max-width:437px;
-        float:right;
 		display:flex;
 		gap:40px;
     }
     .menuhead li{
-        float:left; font-weight:300;
+        text-align:start; font-weight:300;
     }
     .menuhead li a{
         color:rgba(255, 255, 255, 0.8); text-decoration: none;
@@ -676,6 +673,8 @@ header{
 		color: #222; margin-bottom:20px;
 	}
 
-@media screen and(max-width:390px){
-
+@media (max-width:390px){
+	body{
+		width:390px;
+	}
 }
