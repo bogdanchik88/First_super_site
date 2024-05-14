@@ -15,6 +15,7 @@
 
     .header-content {
         z-index: 9999;
+        width: 400PX;
         justify-content: space-between;
     }
     
