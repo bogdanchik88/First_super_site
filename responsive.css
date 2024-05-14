@@ -10,6 +10,7 @@
 
     .center-block-main {
         width: 100%;
+        height: auto !important;
         margin-bottom: 25px;
     }
 
@@ -20,6 +21,7 @@
     
     .logo {
         z-index: 9999;
+        height: auto !important;
         margin-left: 25px;
     }
 
@@ -27,12 +29,14 @@
         z-index: 9999;
         display: block;
         background-color: transparent;
+        height: auto !important;
         border: none;
         margin-right: 25px;
     }
 
     .burger-photo {
         width: 35px;
+        height: auto !important;
     }
 
     .menuhead {
