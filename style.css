@@ -78,7 +78,7 @@ img{
 
 
 body{
-
+	width:1440px;
     font-family: var(--font-family);
     font-size:1em; min-height:100%;
     color:#fff; text-align: left;
@@ -324,6 +324,20 @@ header{
 	.preparation-bold{
 		font-weight:500;
 	}
+	#more-2-5{
+		width:161px;
+		height:57px;
+		color:#fff;
+		text-decoration:none;
+		padding:13px 37px;
+		border-radius:28px;
+		background: #3043A9;
+	}
+	#more-2-5:hover{
+		border-color:#161D2F;
+		background: #161D2F;
+		transition:all 0.2s linear;
+	}
 
 
 
@@ -453,6 +467,7 @@ header{
 .benefits{
 	margin-top:100px;
 	display:flex; flex-direction:column;
+	justify-content: center;
 }
 	.benefits-head{
 		margin-top:100px;
@@ -472,6 +487,9 @@ header{
 		margin-bottom:30px;
 	}
 
+	.number{
+		width:13.2%;
+	}
 	.benefits-numbers{
 		display:flex; justify-content:center;
 		gap:15px; align-items: center;
@@ -482,7 +500,7 @@ header{
 	}
 	.divider{
 		border: 1px solid #161d2f;
-		width: 96px; height: 0px;
+		width: 7%; height: 0px;
 		transform: rotate(-90deg);
 		opacity: 0.4;
 
@@ -536,7 +554,7 @@ header{
 	}
 		.bg-blue-2{
 			height:406px;
-			width:70%;
+			width:77%;
 			background:#161D2F;
 			position:absolute;top:0px;
 			z-index:-2; border-radius:20px;
