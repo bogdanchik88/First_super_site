@@ -15,7 +15,6 @@
 
     .header-content {
         z-index: 9999;
-        width: 400PX;
         justify-content: space-between;
     }
     
@@ -33,7 +32,7 @@
     }
 
     .burger-photo {
-        width: 50px;
+        width: 35px;
     }
 
     .menuhead {
