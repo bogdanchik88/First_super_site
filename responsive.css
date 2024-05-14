@@ -28,11 +28,11 @@
         display: block;
         background-color: transparent;
         border: none;
+        margin-right: 25px;
     }
 
     .burger-photo {
         width: 50px;
-        margin-right: 25px;
     }
 
     .menuhead {
