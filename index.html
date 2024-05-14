@@ -2,31 +2,36 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">    
+        <link rel="stylesheet" type="text/css" href="responsive.css">    
         <title>Stay healthy</title>
         <link rel="icon" href="site_icon.ico">
-
-
+        <script src="js/burger.js"></script>
+        <script src="js/redirect.js"></script>
     </head>
+
     <body>
         <header>           
             <div class="center-block-main">
                 <div class="header-content">
                     <a href="/" class="logo"><img src="images/Logo.png" alt=""></a>
                     <nav>
-                        <ul class="menuhead">
+                        <ul class="menuhead" id="menuhead">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">Program</a></li>
                             <li><a href="#">Nutritions</a></li>
                             <li><a href="#">Prising</a></li>
                             <li><a href="#">About</a></li>
+                            <p class="inburger-button"><a href="#"class="more" id="inburger-button">Join now</a></p>
                         </ul>
                     </nav>
-                    <p><a href="#"class="more">Join now</a></p>
+                    <p><a href="#"class="more" id="join-now" onclick="redirectToUrl()">Join now</a></p>
+                    <button class="burger-button" id="burger-button" onclick="openBurgerMenu()"><img class="burger-photo" src="images/burger.png"></button>
                 </div>
             </div>
             <div class="head-text">
@@ -40,8 +45,8 @@
                 
             </div>
             <div class="head-buttons">
-                <p><a href="#"class="more">Join now</a></p>
-                <p><a href="#"class="more" id="more_2">Contact us</a></p>
+                <p><a href="#"class="more" onclick="redirectToUrl()">Join now</a></p>
+                <p><a href="#"class="more" id="more_2" onclick="redirectToUrl()">Contact us</a></p>
 
             </div>
             <div class="total-vid">         
@@ -50,250 +55,254 @@
             </div> 
         </header>
 
-        <div class="programs">
-            <div class="text">
-                <h1>programs</h1>
-                <p> We have a programs to help<br/>
-                    your workouts</p>
+        <div class="cont">
+    
+            <div class="programs">
+                <div class="text">
+                    <h1>programs</h1>
+                    <p> We have a programs to help<br/>
+                        your workouts</p>
+                </div>
+            </div>
+    
+            <div class="slider">
+                <a href="#" class="arrow"><img src="images/arrow-left.png" alt="" ></a>
+    
+                <div class="point">
+                    <img src="images/slider-pic1.png" class="point-pic">
+                    <h2>Full Body Workout</h2>
+                    <p>By The Rock</p>
+                    <p class="point-text">You can do it in your home, all in under 30<br/>
+                        mins? just need a mat and som . . .</p>
+                    <a href="#"></a>
+                    <p class="point-link"><a href="#">Check out this program!</a><img src="images/arrow.png"></p>
+                </div>
+                <div class="point">
+                    <img src="images/slider-pic2.png" class="point-pic">
+                    <h2>BodyWeight Workout</h2>
+                    <p>By Timi Tarner</p>
+                    <p class="point-text">No need equipments, just your body, your soul,<br/>
+                        and your spirit. You can do . . .</p>
+                    <a href="#"></a>
+                    <p class="point-link"><a href="#">Check out this program!</a><img src="images/arrow.png"></p>
+                </div>
+                <div class="point">
+                    <img src="images/slider-pic3.png" class="point-pic">
+                    <h2>Dumbell Workout</h2>
+                    <p>By Frank Jane</p>
+                    <p class="point-text">This is a workout you can do at home just using a <br/>
+                        set of barbells. The workout is . . .</p>
+                    <a href="#"></a>
+                    <p class="point-link"><a href="#">Check out this program!</a><img src="images/arrow.png"></p>
+                </div>
+    
+                <a href="#" class="arrow"><img src="images/arrow-right.png" alt=""></a>
+            </div>
+            
+            <div class="preparation">
+                <div class="preparation-pic">
+                    <img src="images/preparation-pic.png">
+                </div>
+                <div class="preparation-info">
+                    <h1>Nutritions</h1>
+                    <h2>Meal preparation for <br/>
+                        workout</h2>
+                    <p>Don’t worry we have the best nutritionist for your workout, <br/>
+                        firstly consult with our experts, we can make your Meal <br/>
+                        preparation based on <a class="preparation-bold">Total Daily Energy Expenditure.</a></p>
+                    <p><a href="#"class="more" id="more-2-5">Join now</a></p>           
+                </div>
+            </div>
+    
+            <div class="prising">
+                <div class="prising-bg">
+                    <div class="prising-text">
+                        <h1>prising</h1>
+                        <h2>choose your package<br/>
+                            for workout</h2>
+                    </div>
+                    <div class="bg-blue"></div>  
+                    <div class="banners">         
+                        <div class="banner" id="ban-1">
+                            <h1>Basis</h1>
+                            <img src="images/banner-pic1.png" alt="" class="banner-pic">       
+                            <h2>The Rock</h2> 
+                            <div class="list">
+                                <p class="prising-list"><img src="images/mark.png" alt="">3 times a week</p> 
+                                <p class="prising-list"><img src="images/mark.png" alt="">Full Zoom</p>
+                                <p class="prising-list"><img src="images/mark.png" alt="">PDF Module</p>
+                                <p class="prising-list"><img src="images/mark.png" alt="">Meal Preparation</p>
+                            </div> 
+                            <p class="text"><a class="text-bold">Rp500.000</a><a class="text-normal">/month</a></p>
+                            <p><a href="#" class="more" id="more_3">Workout now</a></p> 
+                        </div>
+                        <div class="banner" id="ban-2">
+                            <img src="images/banner-popular.png" alt="" class="popular-pic">
+                            <h1>Standart</h1>
+                            <img src="images/banner-pic2.png" alt="" class="banner-pic">       
+                            <h2>Anna Jane</h2> 
+                            <div class="list">
+                                <p class="prising-list"><img src="images/mark.png" alt="">4 times a week</p> 
+                                <p class="prising-list"><img src="images/mark.png" alt="">Full Zoom</p>
+                                <p class="prising-list"><img src="images/mark.png" alt="">PDF Module</p>
+                                <p class="prising-list"><img src="images/mark.png" alt="">Meal Preparation</p>
+                                <p class="prising-list"><img src="images/mark.png" alt="">Suplement</p>
+                            </div> 
+                            <p class="text"><a class="text-bold">Rp1.000.000</a><a class="text-normal">/month</a></p>
+                            <p><a href="#" class="more" id="more_3">Workout now</a></p> 
+                        </div>
+                        <div class="banner" id="ban-3">
+                            <h1>Premium</h1>
+                            <img src="images/banner-pic3.png" alt="" class="banner-pic">       
+                            <h2>The Rock</h2> 
+                            <div class="list" id="ban-3">
+                                <p class="prising-list"><img src="images/mark.png" alt="">4 times a week</p> 
+                                <p class="prising-list"><img src="images/mark.png" alt="">Full Zoom</p>
+                                <p class="prising-list"><img src="images/mark.png" alt="">PDF Module</p>
+                                <p class="prising-list"><img src="images/mark.png" alt="">Meal Preparation</p>
+                                <p class="prising-list"><img src="images/mark.png" alt="">Suplement</p>
+                                <p class="prising-list"><img src="images/mark.png" alt="">Gym Equipment</p>
+                            </div> 
+                            <p class="text"><a class="text-bold">Rp2.000.000</a><a class="text-normal">/month</a></p>
+                            <p><a href="#" class="more" id="more_3">Workout now</a></p> 
+                        </div>                                                    
+                    </div>
+                </div>
+             </div>
+             
+        <div class="benefits">
+            <div class="benefits-head">
+                <img src="images/quote-left.png" alt=""> 
+                <div class="benefits-head-text">
+                    <h1>About us</h1>
+                    <h2>Benefits of joining <br/>
+                        with us</h2>
+                </div>
+                <img src="images/quote-right.png" alt="">   
+            </div>
+    
+            <div class="benefits-numbers">
+                <div class="number">
+                    <h1>5+</h1>
+                    <h2>Years of journey</h2>
+                </div>
+                <div class="divider"></div>
+                <div class="number">
+                    <h1>500+</h1>
+                    <h2>Happy clients</h2>
+                </div>
+                <div class="divider"></div>
+                <div class="number">
+                    <h1>400+</h1>
+                    <h2>Dedicated members</h2>
+                </div>
+            </div>
+    
+            <div class="benefits-advantages">
+                <div class="row">
+                    <div class="advantage">
+                        <img src="images/advantage-1.png">
+                        <div class="advantage-text">
+                            <h1>Flexible class</h1>
+                            <h2>you can adapt the class to your busy life very easily<br/>
+                                Workout everytime and everywhere.</h2>
+                        </div>
+                    </div>
+                    <div class="advantage">
+                        <img src="images/advantage-2.png">
+                        <div class="advantage-text">
+                            <h1>Best Trainers</h1>
+                            <h2>Our trainers is very profesional, very motivated and<br/>
+                                funny.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="advantage">
+                        <img src="images/advantage-3.png">
+                        <div class="advantage-text">
+                            <h1>Track Progress</h1>
+                            <h2>See your Progress and workout features for tracking<br/>
+                                your healthy.</h2>
+                        </div>
+                    </div>
+                    <div class="advantage">
+                        <img src="images/advantage-4.png">
+                        <div class="advantage-text">
+                            <h1>Meet New Friends</h1>
+                            <h2>we have the big classes in the online workout, you<br/>
+                                can meet our new member for sharing and chill out.</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="slider">
-            <a href="#" class="arrow"><img src="images/arrow-left.png" alt="" ></a>
-
-            <div class="point">
-                <img src="images/slider-pic1.png" class="point-pic">
-                <h2>Full Body Workout</h2>
-                <p>By The Rock</p>
-                <p class="point-text">You can do it in your home, all in under 30<br/>
-                    mins? just need a mat and som . . .</p>
-                <a href="#"></a>
-                <p class="point-link"><a href="#">Check out this program!</a><img src="images/arrow.png"></p>
-            </div>
-            <div class="point">
-                <img src="images/slider-pic2.png" class="point-pic">
-                <h2>BodyWeight Workout</h2>
-                <p>By Timi Tarner</p>
-                <p class="point-text">No need equipments, just your body, your soul,<br/>
-                    and your spirit. You can do . . .</p>
-                <a href="#"></a>
-                <p class="point-link"><a href="#">Check out this program!</a><img src="images/arrow.png"></p>
-            </div>
-            <div class="point">
-                <img src="images/slider-pic3.png" class="point-pic">
-                <h2>Dumbell Workout</h2>
-                <p>By Frank Jane</p>
-                <p class="point-text">This is a workout you can do at home just using a <br/>
-                    set of barbells. The workout is . . .</p>
-                <a href="#"></a>
-                <p class="point-link"><a href="#">Check out this program!</a><img src="images/arrow.png"></p>
-            </div>
-
-            <a href="#" class="arrow"><img src="images/arrow-right.png" alt=""></a>
-        </div>
-        
-        <div class="preparation">
-            <div class="preparation-pic">
-                <img src="images/preparation-pic.png">
-            </div>
-            <div class="preparation-info">
-                <h1>Nutritions</h1>
-                <h2>Meal preparation for <br/>
-                    workout</h2>
-                <p>Don’t worry we have the best nutritionist for your workout, <br/>
-                    firstly consult with our experts, we can make your Meal <br/>
-                    preparation based on <a class="preparation-bold">Total Daily Energy Expenditure.</a></p>
-                <p><a href="#"class="more" id="more-2-5">Join now</a></p>           
-            </div>
-        </div>
-
-        <div class="prising">
-            <div class="prising-bg">
-                <div class="prising-text">
-                    <h1>prising</h1>
-                    <h2>choose your package<br/>
-                        for workout</h2>
+    
+        <div class="member-form">
+            <div class="member-bg">
+                <div class="bg-blue-2"></div>
+                <div class="member-text">
+                        <h1>Become a member of this<br/>
+                            workout class</h1>
+                        <div class="member-body">
+                            <form action="" method="get">
+                                <input type="address" placeholder="Email Address" class="member-email">
+                            </form>
+                            <p><a href="#"class="more" id="more-4">Join now</a></p>
+                        </div>
                 </div>
-                <div class="bg-blue"></div>  
-                <div class="banners">         
-                    <div class="banner" id="ban-1">
-                        <h1>Basis</h1>
-                        <img src="images/banner-pic1.png" alt="" class="banner-pic">       
-                        <h2>The Rock</h2> 
-                        <div class="list">
-                            <p class="prising-list"><img src="images/mark.png" alt="">3 times a week</p> 
-                            <p class="prising-list"><img src="images/mark.png" alt="">Full Zoom</p>
-                            <p class="prising-list"><img src="images/mark.png" alt="">PDF Module</p>
-                            <p class="prising-list"><img src="images/mark.png" alt="">Meal Preparation</p>
-                        </div> 
-                        <p class="text"><a class="text-bold">Rp500.000</a><a class="text-normal">/month</a></p>
-                        <p><a href="#" class="more" id="more_3">Workout now</a></p> 
-                    </div>
-                    <div class="banner" id="ban-2">
-                        <img src="images/banner-popular.png" alt="" class="popular-pic">
-                        <h1>Standart</h1>
-                        <img src="images/banner-pic2.png" alt="" class="banner-pic">       
-                        <h2>Anna Jane</h2> 
-                        <div class="list">
-                            <p class="prising-list"><img src="images/mark.png" alt="">4 times a week</p> 
-                            <p class="prising-list"><img src="images/mark.png" alt="">Full Zoom</p>
-                            <p class="prising-list"><img src="images/mark.png" alt="">PDF Module</p>
-                            <p class="prising-list"><img src="images/mark.png" alt="">Meal Preparation</p>
-                            <p class="prising-list"><img src="images/mark.png" alt="">Suplement</p>
-                        </div> 
-                        <p class="text"><a class="text-bold">Rp1.000.000</a><a class="text-normal">/month</a></p>
-                        <p><a href="#" class="more" id="more_3">Workout now</a></p> 
-                    </div>
-                    <div class="banner" id="ban-3">
-                        <h1>Premium</h1>
-                        <img src="images/banner-pic3.png" alt="" class="banner-pic">       
-                        <h2>The Rock</h2> 
-                        <div class="list" id="ban-3">
-                            <p class="prising-list"><img src="images/mark.png" alt="">4 times a week</p> 
-                            <p class="prising-list"><img src="images/mark.png" alt="">Full Zoom</p>
-                            <p class="prising-list"><img src="images/mark.png" alt="">PDF Module</p>
-                            <p class="prising-list"><img src="images/mark.png" alt="">Meal Preparation</p>
-                            <p class="prising-list"><img src="images/mark.png" alt="">Suplement</p>
-                            <p class="prising-list"><img src="images/mark.png" alt="">Gym Equipment</p>
-                        </div> 
-                        <p class="text"><a class="text-bold">Rp2.000.000</a><a class="text-normal">/month</a></p>
-                        <p><a href="#" class="more" id="more_3">Workout now</a></p> 
-                    </div>                                                    
-                </div>
-            </div>
-         </div>
-         
-    <div class="benefits">
-        <div class="benefits-head">
-            <img src="images/quote-left.png" alt=""> 
-            <div class="benefits-head-text">
-                <h1>About us</h1>
-                <h2>Benefits of joining <br/>
-                    with us</h2>
-            </div>
-            <img src="images/quote-right.png" alt="">   
-        </div>
-
-        <div class="benefits-numbers">
-            <div class="number">
-                <h1>5+</h1>
-                <h2>Years of journey</h2>
-            </div>
-            <div class="divider"></div>
-            <div class="number">
-                <h1>500+</h1>
-                <h2>Happy clients</h2>
-            </div>
-            <div class="divider"></div>
-            <div class="number">
-                <h1>400+</h1>
-                <h2>Dedicated members</h2>
-            </div>
-        </div>
-
-        <div class="benefits-advantages">
-            <div class="row">
-                <div class="advantage">
-                    <img src="images/advantage-1.png">
-                    <div class="advantage-text">
-                        <h1>Flexible class</h1>
-                        <h2>you can adapt the class to your busy life very easily<br/>
-                            Workout everytime and everywhere.</h2>
-                    </div>
-                </div>
-                <div class="advantage">
-                    <img src="images/advantage-2.png">
-                    <div class="advantage-text">
-                        <h1>Best Trainers</h1>
-                        <h2>Our trainers is very profesional, very motivated and<br/>
-                            funny.</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="advantage">
-                    <img src="images/advantage-3.png">
-                    <div class="advantage-text">
-                        <h1>Track Progress</h1>
-                        <h2>See your Progress and workout features for tracking<br/>
-                            your healthy.</h2>
-                    </div>
-                </div>
-                <div class="advantage">
-                    <img src="images/advantage-4.png">
-                    <div class="advantage-text">
-                        <h1>Meet New Friends</h1>
-                        <h2>we have the big classes in the online workout, you<br/>
-                            can meet our new member for sharing and chill out.</h2>
-                    </div>
+                <div class="member-pic">
+                        <img src="images/member-pic.png">
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="member-form">
-        <div class="member-bg">
-            <div class="bg-blue-2"></div>
-            <div class="member-text">
-                	<h1>Become a member of this<br/>
-                        workout class</h1>
-                    <div class="member-body">
-                        <form action="" method="get">
-                            <input type="address" placeholder="Email Address" class="member-email">
-                        </form>
-                        <p><a href="#"class="more" id="more-4">Join now</a></p>
+    
+        <div class="border"></div>
+    
+        <footer>
+            <div class="footer-main">
+                <div class="footer-links">
+                    <h1>Stay Healthy</h1>
+                    <h2>Online Training, and Consultation About Diet and Exercise<br/> 
+                        tailored based on user needs. </h2>
+                    <div class="footer-pics">
+                        <a href="#" class="footer-but"><img src="images/footer-pic1.png"></a>
+                        <a href="#" class="footer-but"><img src="images/footer-pic2.png"></a>
+                        <a href="#" class="footer-but"><img src="images/footer-pic3.png"></a>
                     </div>
+                </div>  
+                <div class="footer-text">
+                    <div class="text-1">
+                        <h1>Product</h1>
+                        <div class="footer-links">
+                            <a href="#" class="h2">Gym Equipment</a>
+                            <a href="#" class="h2">Suplement</a>
+                            <a href="#" class="h3">Blog</a>
+                        </div>
+                    </div>
+                    <div class="text-2">
+                        <h1>Explore Us</h1>
+                        <div class="footer-links">
+                            <a href="#" class="h2">FAQ</a>
+                            <a href="#" class="h2">Privacy Policy</a>
+                            <a href="#" class="h3">Term and Conditions</a>
+                        </div>
+                    </div>
+                    <div class="text-3">
+                        <h1>Contact</h1>
+                        <div class="footer-links">
+                            <a href="#" class="h2">hi@stayhealthy.com</a>
+                            <a href="#" class="h2">121-123-636</a>
+                            <a href="#" class="h3">stayhealthy.com</a>
+                        </div>
+                    </div>
+                </div>            
             </div>
-            <div class="member-pic">
-                    <img src="images/member-pic.png">
+            <div class="footer-end">
+                <h1>© 2021 StayHealty. All rights reserved</h1>
             </div>
+        </footer>
+    
         </div>
-    </div>
-
-    <div class="border"></div>
-
-    <footer>
-        <div class="footer-main">
-            <div class="footer-links">
-                <h1>Stay Healthy</h1>
-                <h2>Online Training, and Consultation About Diet and Exercise<br/> 
-                    tailored based on user needs. </h2>
-                <div class="footer-pics">
-                    <a href="#" class="footer-but"><img src="images/footer-pic1.png"></a>
-                    <a href="#" class="footer-but"><img src="images/footer-pic2.png"></a>
-                    <a href="#" class="footer-but"><img src="images/footer-pic3.png"></a>
-                </div>
-            </div>  
-            <div class="footer-text">
-                <div class="text-1">
-                    <h1>Product</h1>
-                    <div class="footer-links">
-                        <a href="#" class="h2">Gym Equipment</a>
-                        <a href="#" class="h2">Suplement</a>
-                        <a href="#" class="h3">Blog</a>
-                    </div>
-                </div>
-                <div class="text-2">
-                    <h1>Explore Us</h1>
-                    <div class="footer-links">
-                        <a href="#" class="h2">FAQ</a>
-                        <a href="#" class="h2">Privacy Policy</a>
-                        <a href="#" class="h3">Term and Conditions</a>
-                    </div>
-                </div>
-                <div class="text-3">
-                    <h1>Contact</h1>
-                    <div class="footer-links">
-                        <a href="#" class="h2">hi@stayhealthy.com</a>
-                        <a href="#" class="h2">121-123-636</a>
-                        <a href="#" class="h3">stayhealthy.com</a>
-                    </div>
-                </div>
-            </div>            
-        </div>
-        <div class="footer-end">
-            <h1>© 2021 StayHealty. All rights reserved</h1>
-        </div>
-    </footer>
     </body>
 </html>
