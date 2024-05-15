@@ -172,7 +172,7 @@
     }
     .benefits-anvantages{
         flex-direction: column;
-        gap:0;
+        gap:0; margin-bottom:40px;
     }
     .advantage{
         margin-left: 10px;
