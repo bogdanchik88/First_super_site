@@ -197,6 +197,37 @@
 
 
 
+    .member-form{
+        margin-top:40px;
+        margin-bottom:40px;
+    }
+    .member-bg{
+        flex-direction: column;
+        gap:0; align-items: center;
+    }
+    .bg-blue-2{
+        width:80%;
+        height:105%;
+    }
+    .member-text{
+        margin-top:10px;
+        width:75%;
+        align-items: center;
+        text-align: center;
+    }
+    .member-text h1{
+        font-size:2em;
+        margin-bottom:15px;
+    }
+    .member-body{
+        flex-direction: column;
+    }
+    .member-pic{
+        display:flex; margin-top:40px;
+        justify-content: center;
+    }
+
+
 
     .footer-main{
         flex-direction: column;
