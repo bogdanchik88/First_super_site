@@ -180,6 +180,9 @@
     .number h1{
         font-size:2em;
     }
+    .number h2{
+        font-size:1em;
+    }
     .benefits-advantages{
         flex-direction: column;
         gap:0; margin-bottom:40px;
