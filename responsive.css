@@ -279,12 +279,25 @@
         font-size: 0.8em;
     }
 
-    #ban-1, #ban-2, #ban-3 {
+    .banner {
         display: none;
+    }
+
+    .visible-banner {
+        display: flex;
+        width:80%;
+    }
+
+    .banners {
+        flex-direction: column;
     }
 
     .point {
         display: none;
+    }
+
+    .text{
+        margin-bottom:44px;
     }
 
     .visible {
@@ -322,5 +335,9 @@
 
     .arrow:hover {
         opacity: 1;
+    }
+
+    .round_swiper {
+        display: inline-block;
     }
 }
