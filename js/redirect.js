@@ -1,3 +1,3 @@
 function redirectToUrl() {
-    window.location.href = "https://ya.ru";
+    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
 }
