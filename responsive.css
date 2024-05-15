@@ -169,9 +169,14 @@
         margin-left:10px;
     }
     .footer-text{
-        gap:6px;
+        gap:10px;
         align-items: flex-start;
         margin-left: 10px;
         margin-right: 10px;
+    }
+    #foot-text{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
     }
 }
