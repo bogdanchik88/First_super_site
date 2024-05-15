@@ -123,6 +123,8 @@
         z-index: 111;
     }
 
+
+
     .programs{
         width:100%;
     }
@@ -130,4 +132,24 @@
         font-size: 2.2em;
     }
 
+
+
+    .preparation{
+        flex-direction: column;
+        gap:0;
+    }
+    .preparation-pic{
+        display:flex;
+        max-width:100%;
+        justify-content: center;
+    }
+    .preparation-info{
+        text-align: center;
+    }
+    .preparation-info h1{
+        margin-top:20px;
+    }
+    .preparation h2{
+        font-size:2em;
+    }
 }
