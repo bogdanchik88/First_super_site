@@ -164,6 +164,8 @@
 
     .footer-main{
         flex-direction: column;
+        margin-top:20px;
+        margin-bottom: 30px;
     }
     .footer-links{
         margin-left:10px;
@@ -178,5 +180,8 @@
         display:flex;
         flex-direction: column;
         text-align: center;
+    }
+    .footer-end{
+        margin-bottom:10px;
     }
 }
