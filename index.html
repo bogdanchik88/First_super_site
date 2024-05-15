@@ -13,6 +13,7 @@
         <link rel="icon" href="site_icon.ico">
         <script src="js/burger.js"></script>
         <script src="js/redirect.js"></script>
+        <script src="js/swiper.js"></script>
     </head>
 
     <body>
@@ -69,9 +70,9 @@
             </div>
 
             <div class="slider">
-                <a href="#" class="arrow"><img src="images/arrow-left.png" alt="" ></a>
+                <button class="arrow" id="left" onclick="switchCard(this.id)"><img src="images/arrow-left.png" alt=""></button>
     
-                <div class="point">
+                <div class="point" id="point-1">
                     <img src="images/slider-pic1.png" class="point-pic">
                     <h2>Full Body Workout</h2>
                     <p>By The Rock</p>
@@ -80,7 +81,7 @@
                     <a href="#"></a>
                     <p class="point-link"><a href="#">Check out this program!</a><img src="images/arrow.png"></p>
                 </div>
-                <div class="point">
+                <div class="point" id="point-2">
                     <img src="images/slider-pic2.png" class="point-pic">
                     <h2>BodyWeight Workout</h2>
                     <p>By Timi Tarner</p>
@@ -89,7 +90,7 @@
                     <a href="#"></a>
                     <p class="point-link"><a href="#">Check out this program!</a><img src="images/arrow.png"></p>
                 </div>
-                <div class="point">
+                <div class="point" id="point-3">
                     <img src="images/slider-pic3.png" class="point-pic">
                     <h2>Dumbell Workout</h2>
                     <p>By Frank Jane</p>
@@ -99,7 +100,7 @@
                     <p class="point-link"><a href="#">Check out this program!</a><img src="images/arrow.png"></p>
                 </div>
     
-                <a href="#" class="arrow"><img src="images/arrow-right.png" alt=""></a>
+                <button class="arrow" id="right" onclick="switchCard(this.id)"><img src="images/arrow-right.png" alt=""></button>
             </div>
             
             <div class="preparation">

@@ -252,6 +252,9 @@ header{
 }
 	.arrow{
 		opacity:1;
+		background: transparent;
+		border: none;
+		padding: 0;
 	}
 	.arrow:hover{
 		opacity:0.6;
@@ -678,3 +681,4 @@ header{
 		font-weight: 400; font-size: 0.875em;
 		color: #222; margin-bottom:20px;
 	}
+	

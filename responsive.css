@@ -232,9 +232,8 @@
         justify-content: center;
     }
 
-
-
     .border{
+        width: auto;
         margin-top:70px;
     }
 
@@ -248,11 +247,27 @@
     .footer-links{
         margin-left:10px;
     }
+    .footer-links h1{
+        margin-bottom:10px;
+    }
+    .footer-links h2{
+        display:none;
+    }
+    .h2{
+        font-size: 0.9em;
+    }
+    .h3{
+        font-size: 0.9em;
+    }
     .footer-text{
         gap:10px;
         align-items: flex-start;
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .footer-text h1{
+        margin-bottom:5px;
+        font-size:1em;
     }
     #foot-text{
         display:flex;
@@ -261,5 +276,51 @@
     }
     .footer-end{
         margin-bottom:10px;
+        font-size: 0.8em;
+    }
+
+    #ban-1, #ban-2, #ban-3 {
+        display: none;
+    }
+
+    .point {
+        display: none;
+    }
+
+    .visible {
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 425px;
+    }
+    
+    .point-pic {
+        max-width: 100%;
+    }
+
+    .point-link {
+        justify-content: center;
+    }
+
+    .slider {
+        width: 100%;
+        margin-top: 20px;
+        gap: 5px;
+    }
+
+    .point h2 {
+        width: 100%;
+        text-wrap: nowrap;
+    }
+
+    .point p {
+        font-size: 0.785em;
+        width: 100%;
+    }
+
+    .arrow:hover {
+        opacity: 1;
     }
 }
