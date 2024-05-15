@@ -127,9 +127,14 @@
 
     .programs{
         width:100%;
+        margin-top:40px;
+    }
+    .text{
+        margin-bottom:0;
     }
     .text p{
         font-size: 2.2em;
+        margin-bottom: 0;
     }
 
 
@@ -137,6 +142,8 @@
     .preparation{
         flex-direction: column;
         gap:0;
+        margin-top:10px;
+        margin-bottom: 40px;
     }
     .preparation-pic{
         display:flex;
