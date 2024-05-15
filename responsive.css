@@ -170,6 +170,16 @@
         margin-left:10px;
         margin-right:10px;
     }
+    .benefits-numbers{
+        margin-bottom:30px;
+        gap:0;
+    }
+    .number{
+        width:100%;
+    }
+    .number h1{
+        font-size:2em;
+    }
     .benefits-anvantages{
         flex-direction: column;
         gap:0; margin-bottom:40px;
@@ -178,6 +188,9 @@
         margin-left: 10px;
         margin-right: 5px;
     }
+
+
+
 
     .footer-main{
         flex-direction: column;
