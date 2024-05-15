@@ -234,6 +234,12 @@
 
 
 
+    .border{
+        margin-top:70px;
+    }
+
+
+
     .footer-main{
         flex-direction: column;
         margin-top:20px;
