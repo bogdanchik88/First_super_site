@@ -222,6 +222,9 @@
     .member-body{
         flex-direction: column;
     }
+    .member-email{
+        padding-right: 24px;
+    }
     .member-pic{
         display:flex; margin-top:40px;
         justify-content: center;
