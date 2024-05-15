@@ -162,6 +162,23 @@
 
 
 
+    .benefits{
+        margin-top:0;
+    }
+    .benefits-head{
+        margin-top:40px;
+        margin-left:10px;
+        margin-right:10px;
+    }
+    .benefits-anvantages{
+        flex-direction: column;
+        gap:0;
+    }
+    .advantage{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
     .footer-main{
         flex-direction: column;
         margin-top:20px;

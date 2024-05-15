@@ -555,8 +555,8 @@ header{
 		align-items: flex-start;
 	}
 		.bg-blue-2{
-			height:406px;
-			width:77%;
+			height:113%;
+			width:62%;
 			background:#161D2F;
 			position:absolute;top:0px;
 			z-index:-2; border-radius:20px;
