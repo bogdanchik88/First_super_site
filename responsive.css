@@ -167,12 +167,12 @@
     }
     .benefits-head{
         margin-top:40px;
-        margin-left:20px;
-        margin-right:20px;
     }
     .benefits-numbers{
         margin-bottom:30px;
         gap:0;
+        margin-left:20px;
+        margin-right:20px;
     }
     .divider{
         width:100%;
@@ -184,7 +184,7 @@
         font-size:2em;
     }
     .number h2{
-        font-size:1em;
+        font-size:0.9em;
     }
     .benefits-advantages{
         flex-direction: column;
@@ -223,7 +223,7 @@
         flex-direction: column;
     }
     .member-email{
-        padding-right: 24px;
+        width:100%;
     }
     .member-pic{
         display:flex; margin-top:40px;

@@ -578,7 +578,7 @@ header{
 		margin-bottom:30px;
 	}
 	.member-body{
-		display:flex; flex-direction: row; gap:30px;
+		display:flex; flex-direction: row; gap:70px;
 		align-items: center; justify-content:flex-start;
 	}
 	#more-4{
@@ -598,13 +598,14 @@ header{
 		transition:all 0.2s linear;
 	}
 	.member-email{
+		width:115%;
 		box-sizing:border-box;
 		color:#fff; font-size:1em;
 		background: #161D2F;
 		border:2px solid #fff;
 		border-radius:34px;
 		padding-top:17px; padding-bottom:17px;
-		padding-left:24px; padding-right: 63px;
+		padding-left:24px; padding-right: 24px;
 	}
 
 .border{
