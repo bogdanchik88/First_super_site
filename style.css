@@ -673,19 +673,7 @@ header{
 		}
 	.footer-end{
 		font-family: var(--font-family);
-		color:#000; text-align: center;
+		text-align: center;
 		font-weight: 400; font-size: 0.875em;
 		color: #222; margin-bottom:20px;
 	}
-
-@media (max-width:390px){
-	header{
-		max-width:390px;
-	}
-	.header-content {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
-	}
-}

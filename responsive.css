@@ -159,4 +159,19 @@
     .preparation h2{
         font-size:2em;
     }
+
+
+
+    .footer-main{
+        flex-direction: column;
+    }
+    .footer-links{
+        margin-left:10px;
+    }
+    .footer-text{
+        gap:6px;
+        align-items: flex-start;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
