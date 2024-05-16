@@ -160,7 +160,9 @@
         font-size:2em;
     }
 
-
+    .prising-text{
+        padding-top: 30px;
+    }
 
     .benefits{
         margin-top:0;
@@ -190,7 +192,7 @@
     }
     .benefits-advantages{
         flex-direction: column;
-        gap:0; margin-bottom:40px;
+        gap:0; margin-bottom:0;
     }
     .advantage{
         margin-left: 10px;
@@ -200,7 +202,7 @@
 
 
     .member-form{
-        margin-top:40px;
+        margin-top:0;
         margin-bottom:40px;
     }
     .member-bg{
@@ -279,6 +281,9 @@
         font-size: 0.8em;
     }
 
+
+
+    
     .banner {
         display: none;
     }
@@ -291,13 +296,14 @@
     .banners {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 20px;
     }
 
     .selectors{
         display: flex;
         justify-content: center;
         gap: 10px;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .point {
@@ -342,7 +348,7 @@
     }
 
     .arrow:hover {
-        opacity: 1;
+        opacity: 0.5;
     }
 
     .round_swiper {
