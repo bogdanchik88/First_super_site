@@ -549,9 +549,9 @@ header{
 		display: none;
 		width: 15px;
 		height: 15px;
-		border-radius: 50%; /* Сделать кнопку круглой */
-		border: none; /* Добавить черную окантовку */
-		cursor: pointer; /* Указать курсор в виде руки при наведении */
+		border-radius: 100%; 
+		border: none; 
+		cursor: pointer; 
 		transition: background-color 0.3s;
 		}
 	

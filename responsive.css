@@ -352,6 +352,6 @@
     }
 
     .round_swiper {
-        display: inline-block;
+        display: flex;
     }
 }
