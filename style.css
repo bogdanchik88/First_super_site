@@ -548,7 +548,7 @@ header{
 	.round_swiper {
 		display: none;
 		width: 15px;
-		height: 15px;
+		height: 30px;
 		border-radius: 100%; 
 		border: transparent; 
 		cursor: pointer; 
