@@ -586,8 +586,8 @@ header{
 	}
 	.member-text{
 		display:flex; flex-direction:column;
-		margin-top:105px; text-align:left;
-		text-decoration:none;
+		margin-top:105px;
+		text-decoration:capitalize;
 		font-family: var(--font-family);	
 		text-align: left;
 	}
