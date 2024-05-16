@@ -550,7 +550,7 @@ header{
 		width: 15px;
 		height: 30px;
 		border-radius: 100%; 
-		border: transparent; 
+		border: none; 
 		cursor: pointer; 
 		transition: background-color 0.3s;
 		}
