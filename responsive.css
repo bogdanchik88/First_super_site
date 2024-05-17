@@ -137,7 +137,9 @@
         margin-bottom: 0;
     }
 
-
+    .swiper-slide{
+        width:200px;
+    }
 
     .preparation{
         flex-direction: column;
@@ -286,7 +288,7 @@
     .banner {
         display: none;
     }
-
+    
     .visible-banner {
         display: flex;
         width:80%;
@@ -309,6 +311,7 @@
         display: none;
     }
 
+
     .text{
         margin-bottom:44px;
     }
@@ -330,16 +333,10 @@
         justify-content: center;
     }
 
-    .slider {
-        width: 100%;
-        margin-top: 20px;
-        gap: 5px;
-        margin-bottom:0;
-    }
 
     .point h2 {
         width: 100%;
-        text-wrap: nowrap;
+        text-wrap: wrap;
     }
 
     .point p {

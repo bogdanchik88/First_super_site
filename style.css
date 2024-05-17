@@ -229,7 +229,7 @@ header{
 }
 	.text h1{
 		font-size:0.875em;font-weight:400;
-		text-transform: uppercase;
+		text-transform: capitalize;
 		display:flex;
 		justify-content:center;
 		margin-bottom:16px;
@@ -242,6 +242,30 @@ header{
 		text-align:center;
 		margin-bottom:30px;
 	}
+
+.mySwiper {
+	width: 90%;
+}
+
+
+.swiper-slide {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.swiper-button-next::after{
+	color:transparent;
+	background-image: url("images/arrow-right.png");
+	padding-right: 30px;
+	margin-top: 50px;
+}
+.swiper-button-prev::after{
+	color:transparent;
+	background-image: url("images/arrow-left.png");
+	padding-left: 30px;
+	margin-top: 50px;
+}
 
 
 
@@ -260,12 +284,9 @@ header{
 		opacity:0.6;
 		transition:all 0.1s linear;
 	}
-
 	.point{
-		max-width:24%;color:#000;
+		max-width:100%;color:#000;
 		font-family:var(--font-family);
-		text-align: left;
-
 	}
 		.point-pic{
 			border-radius:10px;
@@ -273,14 +294,17 @@ header{
 		.point h2{
 			font-size:1.875em; font-weight:500;
 			margin-top:19px;
+			color:#000;
 		}
 		.point p{
 			font-size:0.875em; font-weight:400;
-			margin-bottom:10px;		
+			margin-bottom:10px;	
+			color:#000;	
 		}
 		.point-text{
 			font-size:0.875em; font-weight:300;
 			margin-bottom:20px;	
+			color:#000;
 		}
 		.point-link{
 			display:flex;
@@ -296,8 +320,6 @@ header{
 			opacity:0.7;
 			transition:all 0.1s linear;
 		}
-
-
 
 .preparation{
 	display:flex; justify-content:center; gap:60px;
@@ -469,8 +491,8 @@ header{
 
 
 
+
 .benefits{
-	margin-top:100px;
 	display:flex; flex-direction:column;
 	justify-content: center;
 }

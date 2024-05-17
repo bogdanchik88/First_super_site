@@ -11,6 +11,11 @@
         <link rel="stylesheet" type="text/css" href="responsive.css">    
         <title>Stay healthy</title>
         <link rel="icon" href="site_icon.ico">
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="js/burger.js"></script>
         <script src="js/redirect.js"></script>
         <script src="js/swiper.js"></script>
@@ -69,40 +74,68 @@
                 </div>
             </div>
 
-            <div class="slider">
-                <button class="arrow" id="left" onclick="switchCard(this.id)"><img src="images/arrow-left.png" alt=""></button>
-    
-                <div class="point" id="point-1">
-                    <img src="images/slider-pic1.png" class="point-pic">
-                    <h2>Full Body Workout</h2>
-                    <p>By The Rock</p>
-                    <p class="point-text">You can do it in your home, all in under 30<br/>
-                        mins? just need a mat and som . . .</p>
-                    <a href="#"></a>
-                    <p class="point-link"><a href="#">Check out this program!</a><img src="images/arrow.png"></p>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="point" id="point-1">
+                            <img src="images/slider-pic1.png" class="point-pic">
+                            <h2>Full Body Workout</h2>
+                            <p>By The Rock</p>
+                            <p class="point-text">You can do it in your home, all in under 30<br/>
+                                mins? just need a mat and som . . .</p>
+                            <a href="#"></a>
+                            <p class="point-link"><a href="#">Check out this program!</a><img src="images/arrow.png"></p>
+                        </div>    
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="point" id="point-2">
+                            <img src="images/slider-pic2.png" class="point-pic">
+                            <h2>BodyWeight Workout</h2>
+                            <p>By Timi Tarner</p>
+                            <p class="point-text">No need equipments, just your body, your soul,<br/>
+                                and your spirit. You can do . . .</p>
+                            <a href="#"></a>
+                            <p class="point-link"><a href="#">Check out this program!</a><img src="images/arrow.png"></p>
+                        </div>    
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="point" id="point-3">
+                            <img src="images/slider-pic3.png" class="point-pic">
+                            <h2>Dumbell Workout</h2>
+                            <p>By Frank Jane</p>
+                            <p class="point-text">This is a workout you can do at home just using a <br/>
+                                set of barbells. The workout is . . .</p>
+                            <a href="#"></a>
+                            <p class="point-link"><a href="#">Check out this program!</a><img src="images/arrow.png"></p>
+                        </div>      
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="point" id="point-4">
+                            <img src="images/hampter.png" class="point-pic">
+                            <h2>HAMPTER</h2>
+                            <p>HAMPTER</p>
+                            <p class="point-text">This is HAMPTER</p>
+                            <a href="#"></a>
+                            <p class="point-link"><a href="#">Check out this HAMPTER</a><img src="images/arrow.png"></p>
+                        </div>      
+                    </div>   
+                    <div class="swiper-slide">
+                        <div class="point" id="point-5">
+                            <img src="images/idealych_322.png" class="point-pic">
+                            <h2>By Nightfall</h2>
+                            <p>The Most Corrupt Carry</p>
+                            <p class="point-text">He is perfectly knows how to <br/>
+                                lose ANY game! for a certain price, of course</p>
+                            <a href="#"></a>
+                            <p class="point-link"><a href="#">Check out this HAMPTER</a><img src="images/arrow.png"></p>
+                        </div>      
+                    </div>                 
                 </div>
-                <div class="point" id="point-2">
-                    <img src="images/slider-pic2.png" class="point-pic">
-                    <h2>BodyWeight Workout</h2>
-                    <p>By Timi Tarner</p>
-                    <p class="point-text">No need equipments, just your body, your soul,<br/>
-                        and your spirit. You can do . . .</p>
-                    <a href="#"></a>
-                    <p class="point-link"><a href="#">Check out this program!</a><img src="images/arrow.png"></p>
-                </div>
-                <div class="point" id="point-3">
-                    <img src="images/slider-pic3.png" class="point-pic">
-                    <h2>Dumbell Workout</h2>
-                    <p>By Frank Jane</p>
-                    <p class="point-text">This is a workout you can do at home just using a <br/>
-                        set of barbells. The workout is . . .</p>
-                    <a href="#"></a>
-                    <p class="point-link"><a href="#">Check out this program!</a><img src="images/arrow.png"></p>
-                </div>
-    
-                <button class="arrow" id="right" onclick="switchCard(this.id)"><img src="images/arrow-right.png" alt=""></button>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-            
+              
+                    
             <div class="preparation">
                 <div class="preparation-pic">
                     <img src="images/preparation-pic.png">
@@ -312,8 +345,26 @@
         <div class="footer-end">
             <h1>© 2021 StayHealty. All rights reserved</h1>
         </div>
-    </footer>   
+    </footer>  
     
-    <div class="cont"></div>
-    </body>
+    
+      <script>new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: -100,
+        initialSlide: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        centeredSlides:false,
+        mousewheel: false,
+        keyboard: false,
+        loop: true,
+        breakpoints:{
+            390:{
+                slidesPerView:3,
+            },
+        },
+      });</script>
+</body>
 </html>
