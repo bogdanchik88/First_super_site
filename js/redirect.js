@@ -9,3 +9,9 @@ window.addEventListener("resize", () => {
         window.location.href = "https://first-super-site-git-sitepc-bogdanchik88s-projects.vercel.app/";
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (window.innerWidth < 420) {
+        window.location.href = "https://first-super-site-git-sitemobile-bogdanchik88s-projects.vercel.app/";
+    } 
+})
