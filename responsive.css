@@ -9,6 +9,9 @@
     body{
         overflow-x: hidden;
     }
+    .total-site{
+        width:auto;
+    }
     img {
         max-width: 80%;
     }

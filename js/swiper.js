@@ -23,3 +23,21 @@ function move(id) {
     newCard.classList.add("visible-banner") 
 }
 
+new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: -100,
+    initialSlide: 0,
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    },
+    centeredSlides:false,
+    mousewheel: false,
+    keyboard: false,
+    loop: true,
+    breakpoints:{
+        390:{
+            slidesPerView:3,
+        },
+    },
+});
