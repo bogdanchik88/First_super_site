@@ -11,6 +11,7 @@
     }
     .total-site{
         width:auto;
+        display: none;
     }
     img {
         max-width: 80%;
