@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(window.innerWidth)
     if (window.innerWidth < 420) {
         const points = document.querySelectorAll(".point");
-        points[0].classList.add("visible");
         const predlozheniya = document.querySelectorAll(".banner")
         predlozheniya[0].classList.add("visible-banner") 
     }

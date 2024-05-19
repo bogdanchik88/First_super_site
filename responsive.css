@@ -144,7 +144,7 @@
     .preparation{
         flex-direction: column;
         gap:0;
-        margin-top:10px;
+        margin-top:50px;
         margin-bottom: 40px;
     }
     .preparation-pic{
@@ -308,9 +308,17 @@
     }
 
     .point {
-        display: none;
+        width: 200px;
+        text-align: center;
     }
-
+    .point-pic{
+        width:200px;
+        height:130px;
+    }
+    .point h2 {
+        text-wrap: wrap;
+        font-size: 1.4em;
+    }
 
     .text{
         margin-bottom:44px;
